@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CoinConverter</string>
+    <string name="eur">Euro</string>
+    <string name="dol">Dolar</string>
+    <string name="peso">Peso</string>
+    <string name="amount">Amount</string>
+    <string name="RD">RD$</string>
+    <string name="Resultado">Result</string>
+    <string name="US">US$</string>
+    <string name="CurrencyConverter">Currency Converter</string>
+    <string name="to">To</string>
+    <string name="convert">Convert</string>
+    <string name="clear">Clear</string>
+    <string name="From">From</string>
+    <string name="rate">Exchange Rate</string>
+</resources>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rate"
+                android:fontFamily="@font/madeynsans"
+                android:textColor="@color/blanco"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingEnd="5dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:paddingStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eur"
+                    android:textSize="25sp"
+                    android:textColor="@color/blanco"
+                    android:paddingEnd="20dp"
+                    />
+                <EditText
+                    android:id="@+id/EuroPeso"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/madeynsans"
+                    android:hint="@string/RD"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dol"
+                    android:fontFamily="@font/madeynsans"
+                    android:textSize="25sp"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/blanco"
+                    android:paddingEnd="20dp"/>
+                <EditText
+                    android:paddingStart="20dp"
+                    android:id="@+id/UsPeso"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/madeynsans"
+                    android:hint="@string/RD"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                   android:paddingEnd="20dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:paddingStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eur"
+                    android:fontFamily="@font/madeynsans"
+                    android:textSize="25sp"
+                    android:textColor="@color/blanco"
+                    android:paddingEnd="20dp"
+                    />
+                <EditText
+                    android:id="@+id/EuroUs"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/madeynsans"
+                    android:layout_height="match_parent"
+                    android:hint="@string/US"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="@string/CurrencyConverter"
+            android:fontFamily="@font/madeynsans"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/madeynsans"
+            android:text="@string/From" />
+        <RadioGroup
+            android:layout_marginTop="5dp"
+            android:id="@+id/radioGrupoFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/madeynsans"
+                android:text="@string/eur"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/madeynsans"
+                android:text="@string/dol"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/madeynsans"
+                android:text="@string/peso"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:fontFamily="@font/madeynsans"
+                android:textSize="16sp"/>
+            <EditText
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:id="@+id/amountInput"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                android:maxWidth="300dp"
+                android:fontFamily="@font/madeynsans"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/madeynsans"
+            android:text="@string/to"/>
+
+        <RadioGroup
+            android:id="@+id/radioGrupoTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/madeynsans"
+                android:text="@string/eur"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/madeynsans"
+                android:layout_height="wrap_content"
+                android:text="@string/dol"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/madeynsans"
+                android:layout_height="wrap_content"
+                android:text="@string/peso"/>
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/madeynsans"
+            android:text="@string/Resultado"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/resultMoney"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/madeynsans"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:inputType=""
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/convert"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/madeynsans"
+                android:text="@string/convert"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/madeynsans"
+                android:text="@string/clear"
+                tools:ignore="ButtonStyle" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
